@@ -61,4 +61,20 @@ describe("String Calculator", function() {
 
   });
 
+  it("Should not allow for a negative number", function() {
+    const expectedOutput = "Negatives not allowed. Negative Numbers: -22"
+    const input = "//@\n-22@3@8"
+
+    assert.strictEqual(stringCalculator(input), expectedOutput);
+
+  });
+
+  it("Should not allow for a negative number with multiple negatives", function() {
+    const expectedOutput = "Negatives not allowed. Negative Numbers: -1,-2,-3"
+    const input = "//$\n-1$-2$-3"
+
+    assert.strictEqual(stringCalculator(input), expectedOutput);
+
+  });
+
 });
