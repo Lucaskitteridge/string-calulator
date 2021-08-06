@@ -1,6 +1,6 @@
 String Calculator
 
-In order to verify simply run npm install followed by npm test to run all the tests of the problem
+In order to verify simply run **npm install** followed by **npm test** to run all the tests for the problem
 
 Requirements
 
