@@ -13,6 +13,9 @@ const stringCalculator = function(string) {
     if(number < 0){
       negativeNumbers.push(number)
     }
+    if(number > 1000){
+      return 0
+    }
     return parseInt(number);
 })
   const sum = newArray.reduce((a, b) => a + b, 0)

@@ -77,4 +77,12 @@ describe("String Calculator", function() {
 
   });
 
+  it("Should ignore values over 1000", function() {
+    const expectedOutput = 13
+    const input = "1,2,5,5,1001"
+
+    assert.strictEqual(stringCalculator(input), expectedOutput);
+
+  });
+
 });
