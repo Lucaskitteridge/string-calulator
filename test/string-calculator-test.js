@@ -85,4 +85,12 @@ describe("String Calculator", function() {
 
   });
 
+  it("Should allow for a custom delimiter to be any length", function() {
+    const expectedOutput = 6
+    const input = "//***\n1***2***3"
+
+    assert.strictEqual(stringCalculator(input), expectedOutput);
+
+  });
+
 });
