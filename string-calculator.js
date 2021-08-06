@@ -1,4 +1,7 @@
 const stringCalculator = function(string) {
+  if(!string){
+    return 0
+  }
   const newArray = string.split(",").map(function(number) {
     return parseInt(number);
 })
