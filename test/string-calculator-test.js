@@ -93,12 +93,4 @@ describe("String Calculator", function() {
 
   });
 
-  it("Should allow for multiple custom delimiter", function() {
-    const expectedOutput = 6
-    const input = "//$,@\n1$2@3"
-
-    assert.strictEqual(stringCalculator(input), expectedOutput);
-
-  });
-
 });
